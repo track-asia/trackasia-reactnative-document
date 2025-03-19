@@ -195,6 +195,73 @@ import { MapView, Camera, PointAnnotation } from '@track-asia/trackasia-react-na
 - [TrackAsia Native](https://github.com/track-asia/trackasia-gl-native)
 - [Tài Liệu TrackAsia](https://track-asia.com/trackasia-react-native)
 
+### Một số hình ảnh minh họa
+
+<p align="center">
+<strong>Android Demo</strong><br/>
+<img src="/images/android_1.png" alt="Android Demo 1" width="18%">
+<img src="/images/android_2.png" alt="Android Demo 2" width="18%">
+<img src="/images/android_3.png" alt="Android Demo 3" width="18%">
+<img src="/images/android_4.png" alt="Android Demo 4" width="18%">
+<img src="/images/android_5.png" alt="Android Demo 5" width="18%">
+</p>
+
+<p align="center">
+<strong>iOS Demo</strong><br/>
+<img src="/images/ios_1.png" alt="iOS Demo 1" width="18%">
+<img src="/images/ios_2.png" alt="iOS Demo 2" width="18%">
+<img src="/images/ios_3.png" alt="iOS Demo 3" width="18%">
+<img src="/images/ios_4.png" alt="iOS Demo 4" width="18%">
+<img src="/images/ios_5.png" alt="iOS Demo 5" width="18%">
+</p>
+
+## Các lỗi thường gặp và cách khắc phục
+
+### Lỗi khi build iOS
+
+#### 1. Lỗi Hermes Engine
+```bash
+[!] Invalid `hermes-engine.podspec` file: No such file or directory @ rb_sysopen - /Volumes/DATA/TRACKASIA-NAVIGATION/trackasia-react-native/examples/expo-app/node_modules/react-native/index.js
+
+# from /Volumes/DATA/TRACKASIA-NAVIGATION/trackasia-react-native/examples/expo-app/node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec:17
+# -------------------------------------------
+# package.json
+> package = JSON.parse(File.read(File.join(react_native_path, "package.json")))
+# version = package['version']
+# -------------------------------------------
+```
+
+**Nguyên nhân:**
+- Thiếu file package.json trong thư mục react-native
+- Cấu hình Hermes Engine không chính xác
+- Phiên bản React Native không tương thích
+
+**Cách khắc phục:**
+1. Kiểm tra và cài đặt lại các dependencies:
+```bash
+yarn install
+# hoặc
+npm install
+```
+
+2. Xóa thư mục Pods và cài đặt lại:
+```bash
+cd ios
+rm -rf Pods
+pod install
+```
+
+3. Kiểm tra phiên bản React Native và Hermes Engine có tương thích với nhau không
+
+4. Nếu còn lỗi thì ẩn và thay thế version react native
+
+<p align="center">
+<strong>Ảnh minh họa lỗi</strong><br/>
+<img src="/images/error_1.png" alt="Error Screenshot 1" width="30%">
+<img src="/images/error_2.png" alt="Error Screenshot 2" width="30%">
+<img src="/images/error_3.png" alt="Error Screenshot 3" width="30%">
+</p>
+
 ### Dự Án Mẫu
 Repository TrackAsia React Native chứa các dự án mẫu minh họa các tính năng và trường hợp sử dụng khác nhau. Clone repository và khám phá các ví dụ để hiểu rõ hơn cách triển khai các tính năng cụ thể.
 
