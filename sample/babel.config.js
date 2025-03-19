@@ -1,6 +1,14 @@
 /* eslint-env node */
 const {
   withBabelShared,
-} = require("@trackasia-react-native/examples/babel.shared");
+} = require("./shared/babel.shared");
 
-module.exports = withBabelShared("babel-preset-expo");
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ['babel-preset-expo'],
+    plugins: [
+      'react-native-reanimated/plugin',
+    ],
+  };
+};

@@ -1,4 +1,4 @@
-import { App } from "@trackasia-react-native/examples";
-import { registerRootComponent } from "expo";
+import { registerRootComponent } from 'expo';
+import { App } from './shared/src/App.tsx';
 
 registerRootComponent(App);

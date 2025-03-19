@@ -1,12 +1,12 @@
 import { type ConfigContext, type ExpoConfig } from "expo/config";
 import "ts-node/register";
 
-import type { TrackAsiaPluginProps } from "../../src";
+import type { TrackAsiaPluginProps } from "./src/plugin/withTrackAsia";
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
-  name: "Expo App",
-  slug: "trackasia-react-native-expo-example",
+  name: "TrackAsia Sample",
+  slug: "trackasia-sample-react-native",
   version: "1.0.0",
   newArchEnabled: true,
   orientation: "portrait",
@@ -18,7 +18,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   ios: {
     supportsTablet: true,
-    bundleIdentifier: "com.trackasia.expo.example",
+    bundleIdentifier: "com.trackasia.expo.sample",
     infoPlist: {
       NSLocationWhenInUseUsageDescription:
         "Permission is necessary to display user location",
@@ -37,7 +37,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   plugins: [
     [
-      "../../src/plugin/withTrackAsia.ts",
+      "./src/plugin/withTrackAsia.ts",
       {
         android: {},
         ios: {},
