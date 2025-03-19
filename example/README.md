@@ -85,6 +85,31 @@ android {
 }
 ```
 
+### 3. Cài đặt dependencies và chạy ứng dụng
+
+#### Cài đặt dependencies
+```bash
+# Cài đặt tất cả dependencies của dự án
+yarn install
+```
+
+#### Chạy ứng dụng trên Android
+```bash
+# Chạy ứng dụng trên thiết bị/máy ảo Android
+yarn android
+```
+
+#### Chạy ứng dụng trên iOS
+```bash
+# Cài đặt pods (chỉ cần chạy lần đầu hoặc khi thêm dependencies mới)
+cd ios && pod install && cd ..
+
+# Chạy ứng dụng trên thiết bị/máy ảo iOS
+yarn ios
+```
+
+> **Lưu ý**: Đảm bảo bạn đã cài đặt và cấu hình đúng môi trường phát triển React Native trước khi chạy các lệnh trên. Điều này bao gồm Android Studio, Xcode (cho macOS), và các công cụ phát triển cần thiết khác.
+
 ## Sử dụng cơ bản
 
 ### 1. Hiển thị bản đồ đơn giản
