@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "TrackAsia-expo-app",
+    "slug": "TrackAsia-expo-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sangnguyensunny.TrackAsiaexpoapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.sangnguyensunny.TrackAsiaexpoapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@track-asia/trackasia-react-native",
+        {
+          "ios": {
+            "spmSpec": "{\"url\": \"https://github.com/track-asia/trackasia-gl-native-distribution\", \"requirement\": {\"kind\": \"branch\", \"version\": \"2.0.3\"}, \"product_name\": \"TrackAsia\"}"
+          }
+        }
+      ]
+    ]
+  }
+}
