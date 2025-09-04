@@ -32,7 +32,7 @@
         "@track-asia/trackasia-react-native",
         {
           "ios": {
-            "spmSpec": "{\"url\": \"https://github.com/track-asia/trackasia-gl-native-distribution\", \"requirement\": {\"kind\": \"branch\", \"version\": \"2.0.3\"}, \"product_name\": \"TrackAsia\"}"
+            "spmSpec": "{\"url\": \"https://github.com/track-asia/trackasia-gl-native-distribution\", \"requirement\": {\"kind\": \"exactVersion\", \"version\": \"2.0.3\"}, \"product_name\": \"TrackAsia\"}"
           }
         }
       ]

@@ -1,3 +1,9 @@
 --- xcodebuild: WARNING: Using the first of multiple matching destinations:
-{ platform:iOS Simulator, id:7F4A914E-2248-4A4D-B16A-4019FC5FE3C0, OS:18.1, name:IPHONE 15 IOS 17 }
-{ platform:iOS Simulator, id:7F4A914E-2248-4A4D-B16A-4019FC5FE3C0, OS:18.1, name:IPHONE 15 IOS 17 }
+{ platform:iOS Simulator, arch:arm64, id:A1BFF9DD-3FF5-4A50-AE8B-940667674267, OS:18.6, name:iPhone 16 Pro Max }
+{ platform:iOS Simulator, arch:x86_64, id:A1BFF9DD-3FF5-4A50-AE8B-940667674267, OS:18.6, name:iPhone 16 Pro Max }
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Building workspace TrackAsiaSample with scheme TrackAsiaSample and configuration Debug
+(1 failure)

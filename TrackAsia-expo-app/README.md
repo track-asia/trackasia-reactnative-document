@@ -156,6 +156,9 @@ rm -rf node_modules
 npm install
 ```
 
+### Lỗi trên macos M1 
+Installing glog (0.3.5) bị đứng không chạy tiếp - Khắc phục là khởi động lại máy và chạy pod install lại
+
 ## 📝 License
 
 Dự án này được phát triển dựa trên TrackAsia React Native SDK.

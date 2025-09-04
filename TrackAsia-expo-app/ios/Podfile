@@ -13,8 +13,8 @@ install! 'cocoapods',
 
 prepare_react_native_project!
 
-# @generated begin @track-asia/trackasia-react-native:global-variables - expo prebuild (DO NOT MODIFY) sync-1ad70719301d2f31375a1dfb91a3906e117bd19e
-$MLRN_SPM_SPEC = {"url": "https://github.com/track-asia/trackasia-gl-native-distribution", "requirement": {"kind": "branch", "version": "2.0.3"}, "product_name": "TrackAsia"}
+# @generated begin @track-asia/trackasia-react-native:global-variables - expo prebuild (DO NOT MODIFY) sync-dd56ac5a6fb0631087e2e9dbce8cc2c247361367
+$MLRN_SPM_SPEC = {"url": "https://github.com/track-asia/trackasia-gl-native-distribution", "requirement": {"kind": "exactVersion", "version": "2.0.3"}, "product_name": "TrackAsia"}
 # @generated end @track-asia/trackasia-react-native:global-variables
 target 'TrackAsiaexpoapp' do
   use_expo_modules!

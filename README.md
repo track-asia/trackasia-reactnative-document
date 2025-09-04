@@ -16,10 +16,9 @@ TrackAsia là một thư viện bản đồ mạnh mẽ cho ứng dụng React N
 1. [Yêu Cầu Hệ Thống](#yêu-cầu-hệ-thống)
 2. [Cài Đặt](#cài-đặt)
 3. [Triển Khai Cơ Bản](#sử-dụng-cơ-bản)
-4. [Tính Năng Nâng Cao](#tính-năng-nâng-cao)
-5. [Cấu Hình](#cấu-hình)
-6. [Xử Lý Sự Cố](#xử-lý-lỗi-phổ-biến)
-7. [Tài Liệu Tham Khảo](#tài-liệu-tham-khảo)
+4. [Dự Án Mẫu](#-dự-án-mẫu)
+5. [Xử Lý Sự Cố](#xử-lý-lỗi-phổ-biến)
+6. [Tài Liệu Tham Khảo](#tài-liệu-tham-khảo)
 
 ## Yêu cầu hệ thống
 
@@ -287,8 +286,163 @@ pod install
 <img src="/images/error_3.png" alt="Error Screenshot 3" width="30%">
 </p>
 
-### Dự Án Mẫu
-Repository TrackAsia React Native chứa các dự án mẫu minh họa các tính năng và trường hợp sử dụng khác nhau. Clone repository và khám phá các ví dụ để hiểu rõ hơn cách triển khai các tính năng cụ thể.
+## 📁 Dự Án Mẫu
+
+Repository này bao gồm 3 dự án mẫu hoàn chỉnh để bạn tham khảo và học tập:
+
+### 🚀 TrackAsia-expo-app/
+
+**Ứng dụng React Native Expo tích hợp TrackAsia** - Dành cho dự án sử dụng Expo
+
+**Đặc điểm:**
+- ✅ **Framework**: Expo với Prebuild workflow
+- ✅ **TrackAsia SDK**: v2.0.2
+- ✅ **React Native**: v0.79.5, Expo SDK 53.0.22
+- ✅ **Native Integration**: Sử dụng Expo Plugin system
+- ✅ **iOS Configuration**: Swift Package Manager thông qua plugin
+- ✅ **TypeScript**: Hỗ trợ đầy đủ với type safety
+
+**Tính năng chính:**
+- 🗺️ Hiển thị bản đồ TrackAsia với giao diện đẹp
+- 📍 Custom marker và point annotations
+- 👆 Xử lý sự kiện tap trên bản đồ
+- 📱 UI hiện đại với header/footer
+- 🎨 Shadow effects và border radius
+
+**Cách sử dụng:**
+```bash
+cd TrackAsia-expo-app
+npm install
+npx expo prebuild    # Tạo native directories
+npm run ios          # Chạy trên iOS
+npm run android      # Chạy trên Android
+```
+
+**Phù hợp cho:**
+- Dự án mới bắt đầu với Expo
+- Ứng dụng cần deploy lên App Store/Play Store
+- Team muốn tận dụng Expo ecosystem
+
+---
+
+### ⚡ TrackAsia-react-native-app/
+
+**Ứng dụng React Native thuần túy** - Dành cho dự án không sử dụng Expo
+
+**Đặc điểm:**
+- ✅ **Framework**: Pure React Native CLI
+- ✅ **TrackAsia SDK**: v2.0.2  
+- ✅ **React Native**: v0.79.3
+- ✅ **Package Manager**: Yarn v4 với node_modules
+- ✅ **iOS Setup**: Manual Podfile configuration
+- ✅ **TypeScript**: Support với custom types
+
+**Tính năng chính:**
+- 🗺️ Component bản đồ tương tự Expo app
+- 📍 Point annotations với custom styling  
+- 🎯 Event handling cho map interactions
+- 🏗️ Architecture sạch với component separation
+- ⚙️ Manual native configuration
+
+**Cách sử dụng:**
+```bash
+cd TrackAsia-react-native-app
+yarn install
+cd ios && pod install && cd ..
+yarn ios            # Chạy trên iOS  
+yarn android         # Chạy trên Android
+```
+
+**Phù hợp cho:**
+- Dự án React Native hiện có
+- Ứng dụng cần custom native modules
+- Team có kinh nghiệm với native development
+
+---
+
+### 🎯 sample/
+
+**Comprehensive Examples Collection** - Bộ sưu tập ví dụ đầy đủ nhất
+
+**Đặc điểm:**
+- ✅ **Architecture**: Expo với shared workspace
+- ✅ **TrackAsia SDK**: v2.0.2
+- ✅ **React Native**: v0.76.9, Expo SDK ~52.0.39
+- ✅ **Navigation**: React Navigation với nested screens
+- ✅ **Workspace**: Monorepo setup với shared code
+- ✅ **Examples**: 50+ ví dụ được tổ chức theo categories
+
+**Bao gồm các examples:**
+
+📍 **Map Features:**
+- Show Map, Local Style JSON, Show Click
+- Two Map Views, Offline Region, Pixel Point
+- Layer Visibility, Change Colors, Tint Color
+
+📷 **Camera Controls:**
+- Fit Bounds, Set Pitch/Heading, Fly To
+- Restrict Bounds, Take Snapshots, Yo-yo Effect
+- Get Zoom/Center, Compass View
+
+👤 **User Location:**
+- Follow User Location (Alignment & Render Mode)
+- User Location for Navigation
+- Location Updates & Displacement
+- Android FPS Configuration
+
+🏷️ **Annotations & Markers:**
+- Point Annotations & Anchors
+- Custom Icons, Marker Views, Heatmaps
+- Custom Callouts, Symbol Layers
+
+🎨 **Styling & Layers:**
+- GeoJSON Source, Raster Tiles, Indoor Maps
+- Vector Sources, Image Overlays
+- Gradient Lines, PMTiles Support
+
+⚡ **Animations:**
+- Animate Circle Along Line
+- Animated Length/Morph/Size
+- Reanimated Points
+
+🔧 **Advanced Features:**
+- Clustering (Earthquakes example)
+- Data-driven Circle Colors
+- Query Features (Point & Bounding Box)
+- Cache Management
+
+**Cách sử dụng:**
+```bash
+cd sample
+yarn install
+yarn start           # Expo development server
+yarn ios             # iOS Simulator
+yarn android         # Android Emulator
+```
+
+**Phù hợp cho:**
+- Học tập và tham khảo implementation
+- Test các tính năng trước khi tích hợp
+- Hiểu rõ API và best practices
+
+---
+
+### 🚀 Cách chọn dự án phù hợp
+
+| Tiêu chí | TrackAsia-expo-app | TrackAsia-react-native-app | sample |
+|----------|-------------------|---------------------------|---------|
+| **Độ phức tạp** | Đơn giản | Trung bình | Cao |
+| **Expo** | ✅ Có | ❌ Không | ✅ Có |
+| **Learning curve** | Thấp | Trung bình | Cao |
+| **Examples** | Basic | Basic | Comprehensive |
+| **Production ready** | ✅ | ✅ | ❌ (Demo only) |
+
+**Khuyến nghị:**
+- **Bắt đầu mới**: `TrackAsia-expo-app`
+- **Dự án RN hiện có**: `TrackAsia-react-native-app`  
+- **Học tập/Research**: `sample`
+
+Clone repository và khám phá các ví dụ để hiểu rõ hơn cách triển khai các tính năng cụ thể.
 
 ### Hỗ Trợ Cộng Đồng
 Nếu bạn gặp vấn đề hoặc có câu hỏi:

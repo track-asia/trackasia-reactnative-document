@@ -8,28 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		312C3E475FC52058C143D0A5 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F8551BDC0A4E30242581F4 /* ExpoModulesProvider.swift */; };
-		3869D41F5CF665EC36AC0087 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E81D6CF459419B70849F5C97 /* PrivacyInfo.xcprivacy */; };
+		23FC1DB9E879017960758434 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0CAA3E28D11326B6F97BAC68 /* PrivacyInfo.xcprivacy */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		74CF2280919B08311FB4B1B8 /* libPods-TrackAsiaexpoapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5833597F72AE3B22F04B3FB0 /* libPods-TrackAsiaexpoapp.a */; };
+		B3C7C3B9BDC69C26EA973D72 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23918D1F5092B0269948F7F5 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+		F75ABBC8A8620A79C905DF33 /* libPods-TrackAsiaexpoapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E01F39B7C3AFE20FF4B5CE /* libPods-TrackAsiaexpoapp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CAA3E28D11326B6F97BAC68 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = TrackAsiaexpoapp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TrackAsiaexpoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackAsiaexpoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TrackAsiaexpoapp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TrackAsiaexpoapp/Info.plist; sourceTree = "<group>"; };
-		5833597F72AE3B22F04B3FB0 /* libPods-TrackAsiaexpoapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrackAsiaexpoapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		64F8551BDC0A4E30242581F4 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-TrackAsiaexpoapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		7339BFDD85BBC571AD0F720A /* Pods-TrackAsiaexpoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackAsiaexpoapp.release.xcconfig"; path = "Target Support Files/Pods-TrackAsiaexpoapp/Pods-TrackAsiaexpoapp.release.xcconfig"; sourceTree = "<group>"; };
+		23918D1F5092B0269948F7F5 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-TrackAsiaexpoapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		428C950F7CEF9D867287BA83 /* Pods-TrackAsiaexpoapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackAsiaexpoapp.debug.xcconfig"; path = "Target Support Files/Pods-TrackAsiaexpoapp/Pods-TrackAsiaexpoapp.debug.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = TrackAsiaexpoapp/SplashScreen.storyboard; sourceTree = "<group>"; };
+		B6E01F39B7C3AFE20FF4B5CE /* libPods-TrackAsiaexpoapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrackAsiaexpoapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		E81D6CF459419B70849F5C97 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = TrackAsiaexpoapp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BFFA045BF155D5C1E463E0D3 /* Pods-TrackAsiaexpoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackAsiaexpoapp.release.xcconfig"; path = "Target Support Files/Pods-TrackAsiaexpoapp/Pods-TrackAsiaexpoapp.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TrackAsiaexpoapp/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* TrackAsiaexpoapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TrackAsiaexpoapp-Bridging-Header.h"; path = "TrackAsiaexpoapp/TrackAsiaexpoapp-Bridging-Header.h"; sourceTree = "<group>"; };
-		FF364075C82A612AF3F8D372 /* Pods-TrackAsiaexpoapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackAsiaexpoapp.debug.xcconfig"; path = "Target Support Files/Pods-TrackAsiaexpoapp/Pods-TrackAsiaexpoapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CF2280919B08311FB4B1B8 /* libPods-TrackAsiaexpoapp.a in Frameworks */,
+				F75ABBC8A8620A79C905DF33 /* libPods-TrackAsiaexpoapp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				E81D6CF459419B70849F5C97 /* PrivacyInfo.xcprivacy */,
+				0CAA3E28D11326B6F97BAC68 /* PrivacyInfo.xcprivacy */,
 			);
 			name = TrackAsiaexpoapp;
 			sourceTree = "<group>";
@@ -62,25 +62,15 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5833597F72AE3B22F04B3FB0 /* libPods-TrackAsiaexpoapp.a */,
+				B6E01F39B7C3AFE20FF4B5CE /* libPods-TrackAsiaexpoapp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3810DCA5935117FBDE5201D4 /* Pods */ = {
+		8233FBAF71CBC741A726ED7F /* TrackAsiaexpoapp */ = {
 			isa = PBXGroup;
 			children = (
-				FF364075C82A612AF3F8D372 /* Pods-TrackAsiaexpoapp.debug.xcconfig */,
-				7339BFDD85BBC571AD0F720A /* Pods-TrackAsiaexpoapp.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		7B207B9866930FC5DC23864D /* TrackAsiaexpoapp */ = {
-			isa = PBXGroup;
-			children = (
-				64F8551BDC0A4E30242581F4 /* ExpoModulesProvider.swift */,
+				23918D1F5092B0269948F7F5 /* ExpoModulesProvider.swift */,
 			);
 			name = TrackAsiaexpoapp;
 			sourceTree = "<group>";
@@ -99,8 +89,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				3810DCA5935117FBDE5201D4 /* Pods */,
-				93E18887A044FB17B04E4999 /* ExpoModulesProviders */,
+				8506A01079C7EB548A45FE2A /* Pods */,
+				EED64BDFA4F22BF379F85BC9 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -115,12 +105,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93E18887A044FB17B04E4999 /* ExpoModulesProviders */ = {
+		8506A01079C7EB548A45FE2A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7B207B9866930FC5DC23864D /* TrackAsiaexpoapp */,
+				428C950F7CEF9D867287BA83 /* Pods-TrackAsiaexpoapp.debug.xcconfig */,
+				BFFA045BF155D5C1E463E0D3 /* Pods-TrackAsiaexpoapp.release.xcconfig */,
 			);
-			name = ExpoModulesProviders;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -132,6 +124,14 @@
 			path = TrackAsiaexpoapp/Supporting;
 			sourceTree = "<group>";
 		};
+		EED64BDFA4F22BF379F85BC9 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				8233FBAF71CBC741A726ED7F /* TrackAsiaexpoapp */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,14 +140,14 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TrackAsiaexpoapp" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				A531AD6B16D9BAF147764FF6 /* [Expo] Configure project */,
+				6C7A0A3C3A253D8B1830A53D /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				37F6FF2B678F46509B5BC181 /* Remove signature files (Xcode workaround) */,
-				1D853F6FEB74F2D02F419134 /* [CP] Embed Pods Frameworks */,
+				3A1966AB004041BCB7B55711 /* Remove signature files (Xcode workaround) */,
+				E1693A75200D9F1116F7F3FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,7 +155,7 @@
 			);
 			name = TrackAsiaexpoapp;
 			packageProductDependencies = (
-				2122DC9285670D2C1D56E917 /* TrackAsia */,
+				B6C0DA556BEA3C52DFB9671A /* TrackAsia */,
 			);
 			productName = TrackAsiaexpoapp;
 			productReference = 13B07F961A680F5B00A75B9A /* TrackAsiaexpoapp.app */;
@@ -184,7 +184,7 @@
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			packageReferences = (
-				DB6E9E6D1F45F6A2E9C9DD95 /* XCRemoteSwiftPackageReference "trackasia-gl-native-distribution" */,
+				84207F90F0CFF61048708405 /* XCRemoteSwiftPackageReference "trackasia-gl-native-distribution" */,
 			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
@@ -203,7 +203,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				3869D41F5CF665EC36AC0087 /* PrivacyInfo.xcprivacy in Resources */,
+				23FC1DB9E879017960758434 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,25 +247,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1D853F6FEB74F2D02F419134 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TrackAsiaexpoapp/Pods-TrackAsiaexpoapp-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrackAsiaexpoapp/Pods-TrackAsiaexpoapp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		37F6FF2B678F46509B5BC181 /* Remove signature files (Xcode workaround) */ = {
+		3A1966AB004041BCB7B55711 /* Remove signature files (Xcode workaround) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,6 +260,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\n          echo \"Remove signature files (Xcode workaround)\";\n          rm -rf \"$CONFIGURATION_BUILD_DIR/TrackAsia.xcframework-ios.signature\";\n        ";
+		};
+		6C7A0A3C3A253D8B1830A53D /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-TrackAsiaexpoapp/expo-configure-project.sh\"\n";
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -311,24 +312,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrackAsiaexpoapp/Pods-TrackAsiaexpoapp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A531AD6B16D9BAF147764FF6 /* [Expo] Configure project */ = {
+		E1693A75200D9F1116F7F3FE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackAsiaexpoapp/Pods-TrackAsiaexpoapp-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
 			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-TrackAsiaexpoapp/expo-configure-project.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrackAsiaexpoapp/Pods-TrackAsiaexpoapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -338,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				312C3E475FC52058C143D0A5 /* ExpoModulesProvider.swift in Sources */,
+				B3C7C3B9BDC69C26EA973D72 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +347,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF364075C82A612AF3F8D372 /* Pods-TrackAsiaexpoapp.debug.xcconfig */;
+			baseConfigurationReference = 428C950F7CEF9D867287BA83 /* Pods-TrackAsiaexpoapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -383,7 +383,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7339BFDD85BBC571AD0F720A /* Pods-TrackAsiaexpoapp.release.xcconfig */;
+			baseConfigurationReference = BFFA045BF155D5C1E463E0D3 /* Pods-TrackAsiaexpoapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -559,20 +559,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DB6E9E6D1F45F6A2E9C9DD95 /* XCRemoteSwiftPackageReference "trackasia-gl-native-distribution" */ = {
+		84207F90F0CFF61048708405 /* XCRemoteSwiftPackageReference "trackasia-gl-native-distribution" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/track-asia/trackasia-gl-native-distribution";
 			requirement = {
-				kind = branch;
+				kind = exactVersion;
 				version = 2.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2122DC9285670D2C1D56E917 /* TrackAsia */ = {
+		B6C0DA556BEA3C52DFB9671A /* TrackAsia */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DB6E9E6D1F45F6A2E9C9DD95 /* XCRemoteSwiftPackageReference "trackasia-gl-native-distribution" */;
+			package = 84207F90F0CFF61048708405 /* XCRemoteSwiftPackageReference "trackasia-gl-native-distribution" */;
 			productName = TrackAsia;
 		};
 /* End XCSwiftPackageProductDependency section */

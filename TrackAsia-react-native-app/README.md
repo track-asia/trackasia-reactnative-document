@@ -86,6 +86,9 @@ You've successfully run and modified your React Native App. :partying_face:
 
 If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
+### Lỗi trên macos M1 
+Installing glog (0.3.5) bị đứng không chạy tiếp - Khắc phục là khởi động lại máy và chạy pod install lại
+
 # Learn More
 
 To learn more about React Native, take a look at the following resources:

@@ -32,6 +32,17 @@ target 'TrackAsiaMapApp' do
       # :ccache_enabled => true
     )
     
+    # Fix glog build issue
+    installer.pods_project.targets.each do |target|
+      if target.name == 'glog'
+        target.build_configurations.each do |config|
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+          config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
+        end
+      end
+    end
+    
     # TrackAsia post install configuration
     $MLRN_SPM_SPEC = {
       url: "https://github.com/track-asia/trackasia-gl-native-distribution",
