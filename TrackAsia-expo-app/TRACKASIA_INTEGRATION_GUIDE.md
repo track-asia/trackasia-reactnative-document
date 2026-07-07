@@ -37,7 +37,7 @@ TrackAsia-expo-app/
   "name": "TrackAsiaMapApp",
   "version": "1.0.0",
   "dependencies": {
-    "@track-asia/trackasia-react-native": "^2.0.1",
+    "@track-asia/trackasia-react-native": "^2.0.2",
     "expo": "~53.0.11",
     "react": "19.0.0",
     "react-native": "0.79.3"
@@ -402,7 +402,7 @@ npx react-native start --reset-cache
 ### 1. Custom Map Styles
 ```typescript
 <TrackAsiaGL.MapView
-  styleURL="https://your-custom-style-url.json"
+  mapStyle="https://your-custom-style-url.json"
   style={styles.map}
 >
 ```
@@ -488,4 +488,4 @@ npm run test:coverage
 
 ---
 
-*Tài liệu này được cập nhật cho TrackAsia React Native v2.0.1 và Expo SDK 53* 
+*Tài liệu này được cập nhật cho TrackAsia React Native v2.0.2 và Expo SDK 53* 

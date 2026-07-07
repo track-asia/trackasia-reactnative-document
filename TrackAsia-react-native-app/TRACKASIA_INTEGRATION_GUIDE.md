@@ -25,7 +25,7 @@ TrackAsia-react-native-app/
 ```json
 {
   "dependencies": {
-    "@track-asia/trackasia-react-native": "^2.0.1",
+    "@track-asia/trackasia-react-native": "^2.0.2",
     "react": "19.0.0",
     "react-native": "0.79.3"
   }
@@ -428,7 +428,7 @@ onMapReady = () => {
 // Có thể customize map style thông qua styleURL
 <TrackAsiaGL.MapView
   style={styles.map}
-  styleURL="custom-style-url" // Optional
+  mapStyle="custom-style-url" // Optional
 >
 ```
 
@@ -510,4 +510,4 @@ const wrongCoordinate = [10.8231, 106.6297];
 
 ---
 
-*Tài liệu này được tạo dựa trên TrackAsia React Native v2.0.1 và React Native v0.79.3* 
+*Tài liệu này được tạo dựa trên TrackAsia React Native v2.0.2 và React Native v0.79.3* 
