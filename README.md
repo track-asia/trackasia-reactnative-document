@@ -168,12 +168,17 @@ import { MapView, Camera, PointAnnotation } from '@track-asia/trackasia-react-na
 ### 3. Theo dõi vị trí người dùng
 
 ```javascript
-<MapView
-  style={styles.map}
-  showUserLocation={true}
-  userTrackingMode={UserTrackingModes.Follow}
->
-  {/* Các thành phần khác */}
+import { MapView, Camera, UserLocation, UserTrackingMode } from '@track-asia/trackasia-react-native';
+
+<MapView style={styles.map}>
+  {/* Hiển thị chấm vị trí người dùng */}
+  <UserLocation visible={true} />
+
+  {/* Camera bám theo vị trí người dùng */}
+  <Camera
+    followUserLocation={true}
+    followUserMode={UserTrackingMode.Follow}
+  />
 </MapView>
 ```
 
