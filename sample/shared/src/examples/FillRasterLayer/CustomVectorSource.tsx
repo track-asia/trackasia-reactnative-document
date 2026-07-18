@@ -18,7 +18,7 @@ export function CustomVectorSource() {
       <MapView style={sheet.matchParent}>
         <VectorSource
           id="trackasia-tiles"
-          url="https://maps.track-asia.com/styles/v1/streets.json?key=public_key"
+          url="https://maps.track-asia.com/styles/v2/streets.json?key=public"
           ref={vectorSourceRef}
           onPress={(event) => {
             console.log(

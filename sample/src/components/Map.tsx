@@ -32,7 +32,7 @@ const Map: React.FC = () => {
     <View style={styles.container}>
       <TrackAsiaGL.MapView
         style={styles.map}
-        styleURL="https://tiles.track-asia.com/tiles/v3/style-streets.json?key=public"
+        styleURL="https://maps.track-asia.com/styles/v2/streets.json?key=public"
         zoomLevel={14}
         centerCoordinate={
           userLocation

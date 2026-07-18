@@ -1,9 +1,9 @@
 import TrackAsiaGL from '@track-asia/trackasia-react-native';
-import React, { Component } from 'react';
+import { Component } from 'react';
 import {
-  StyleSheet,
-  Text,
-  View
+    StyleSheet,
+    Text,
+    View
 } from 'react-native';
 
 // TrackAsia không cần access token
@@ -55,7 +55,7 @@ class TrackAsiaMapView extends Component<TrackAsiaMapViewProps, TrackAsiaMapView
       <View style={[styles.container, style]}>
         <TrackAsiaGL.MapView
           style={styles.map}
-          styleURL="https://maps.track-asia.com/styles/v2/streets.json?key=public_key"
+          styleURL="https://maps.track-asia.com/styles/v2/streets.json?key=public"
           onPress={this.onMapPress}
           onDidFinishLoadingMap={this.onMapReady}
         >

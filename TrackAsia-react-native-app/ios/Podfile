@@ -32,7 +32,7 @@ target 'TrackAsiaMapApp' do
       # :ccache_enabled => true
     )
     
-    # Fix glog build issue
+    # Fix glog and fmt build issues with Xcode 26+
     installer.pods_project.targets.each do |target|
       if target.name == 'glog'
         target.build_configurations.each do |config|
@@ -41,6 +41,18 @@ target 'TrackAsiaMapApp' do
           config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
         end
       end
+    end
+
+    # Patch fmt to disable consteval for Xcode 26+ compatibility
+    fmt_base_h = File.join(installer.sandbox.pod_dir('fmt'), 'include/fmt/base.h')
+    if File.exist?(fmt_base_h)
+      content = File.read(fmt_base_h)
+      patched = content.sub("#elif defined(__cpp_consteval)\n#  define FMT_USE_CONSTEVAL 1",
+                            "#elif defined(__cpp_consteval)\n#  define FMT_USE_CONSTEVAL 0  // Disabled for Xcode 26+ compatibility")
+      patched = patched.sub("#elif FMT_GCC_VERSION >= 1002 || FMT_CLANG_VERSION >= 1101\n#  define FMT_USE_CONSTEVAL 1",
+                            "#elif FMT_GCC_VERSION >= 1002 || FMT_CLANG_VERSION >= 1101\n#  define FMT_USE_CONSTEVAL 0  // Disabled for Xcode 26+ compatibility")
+      File.write(fmt_base_h, patched) if patched != content
+      Pod::UI.puts "Patched fmt/base.h for Xcode 26+ consteval compatibility".green
     end
     
     # TrackAsia post install configuration

@@ -23,19 +23,22 @@ TrackAsia là một thư viện bản đồ mạnh mẽ cho ứng dụng React N
 ## Yêu cầu hệ thống
 
 ### React Native
-- React Native phiên bản 0.72.6 trở lên
-- Node.js 14 trở lên
+- React Native phiên bản 0.76.9 trở lên (khuyến nghị 0.79.x)
+- Node.js 18 trở lên
 - npm hoặc yarn
 
 ### iOS
-- Xcode 12 trở lên
-- iOS 12.0 trở lên
+- Xcode 14 trở lên (khuyến nghị Xcode 16+)
+- iOS 15.0 trở lên
 - CocoaPods
+- Swift Package Manager (SPM) cho TrackAsia native SDK
 
 ### Android
 - Android Studio
-- Android SDK Platform 21 trở lên
+- Android SDK Platform 26 trở lên (compileSdk 35+)
 - Android Build Tools 29.0.2 trở lên
+- NDK 27.0.12077973 trở lên
+- Kotlin 1.9.10 trở lên
 
 ## Cài đặt
 
@@ -67,21 +70,48 @@ cd ios && pod install && cd ..
 <string>Ứng dụng cần quyền truy cập vị trí của bạn để hiển thị trên bản đồ</string>
 ```
 
+3. Cấu hình Podfile với SPM cho TrackAsia native SDK:
+```ruby
+# Trong post_install block:
+$MLRN_SPM_SPEC = {
+  url: "https://github.com/track-asia/trackasia-gl-native-distribution",
+  requirement: {
+    kind: "exactVersion",
+    version: "2.0.3"
+  },
+  product_name: "TrackAsia"
+}
+$MLRN.post_install(installer)
+```
+
+4. Đảm bảo iOS deployment target tối thiểu 15.0 trong Podfile:
+```ruby
+platform :ios, min_ios_version_supported
+```
+
 #### Android
 1. Thêm quyền vào `AndroidManifest.xml`:
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
 2. Cập nhật `android/app/build.gradle`:
 ```gradle
 android {
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 26
     }
 }
+```
+
+3. Đảm bảo `android/gradle.properties` có cấu hình JVM đủ:
+```properties
+org.gradle.jvmargs=-Xmx4096M -XX:MaxMetaspaceSize=1024m
+org.gradle.parallel=true
+org.gradle.caching=true
 ```
 
 ### 3. Cài đặt dependencies và chạy ứng dụng
@@ -123,7 +153,7 @@ const App = () => {
     <View style={styles.container}>
       <MapView
         style={styles.map}
-        mapStyle="https://maps.track-asia.com/styles/v1/streets.json?key=your_api_key"
+        mapStyle="https://maps.track-asia.com/styles/v2/streets.json?key=public"
       >
         <Camera
           zoomLevel={14}
@@ -218,6 +248,18 @@ import { MapView, Camera, UserLocation, UserTrackingMode } from '@track-asia/tra
 - Xác minh tất cả dependencies đã được cài đặt đúng cách
 
 ## Tài liệu tham khảo
+
+### Style URLs theo quốc gia (v2)
+
+| Quốc gia | Style URL |
+|----------|-----------|
+| VN (mặc định) | `https://maps.track-asia.com/styles/v2/streets.json?key=public` |
+| Singapore | `https://sg-maps.track-asia.com/styles/v2/streets.json?key=public` |
+| Thailand | `https://th-maps.track-asia.com/styles/v2/streets.json?key=public` |
+| Taiwan | `https://tw-maps.track-asia.com/styles/v2/streets.json?key=public` |
+| Malaysia | `https://my-maps.track-asia.com/styles/v2/streets.json?key=public` |
+
+> **Lưu ý:** Thay `key=public` bằng API key thực tế của bạn khi sử dụng production.
 
 ### Repository Chính Thức
 - [TrackAsia React Native](https://github.com/track-asia/trackasia-react-native)
