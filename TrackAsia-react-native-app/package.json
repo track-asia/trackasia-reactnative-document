@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@track-asia/trackasia-react-native": "^2.0.2",
+    "@track-asia/trackasia-react-native": "^2.0.3",
     "react": "19.0.0",
     "react-native": "0.79.3"
   },

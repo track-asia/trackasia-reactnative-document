@@ -292,9 +292,9 @@ import { MapView, Camera, UserLocation, UserTrackingMode } from '@track-asia/tra
 
 #### 1. Lỗi Hermes Engine
 ```bash
-[!] Invalid `hermes-engine.podspec` file: No such file or directory @ rb_sysopen - /Volumes/DATA/TRACKASIA-NAVIGATION/trackasia-react-native/examples/expo-app/node_modules/react-native/index.js
+[!] Invalid `hermes-engine.podspec` file: No such file or directory @ rb_sysopen - <project-root>/node_modules/react-native/index.js
 
-# from /Volumes/DATA/TRACKASIA-NAVIGATION/trackasia-react-native/examples/expo-app/node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec:17
+# from <project-root>/node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec:17
 # -------------------------------------------
 # package.json
 > package = JSON.parse(File.read(File.join(react_native_path, "package.json")))
@@ -343,7 +343,7 @@ Repository này bao gồm 3 dự án mẫu hoàn chỉnh để bạn tham khảo
 
 **Đặc điểm:**
 - ✅ **Framework**: Expo với Prebuild workflow
-- ✅ **TrackAsia SDK**: v2.0.2
+- ✅ **TrackAsia SDK**: v2.0.3
 - ✅ **React Native**: v0.79.5, Expo SDK 53.0.22
 - ✅ **Native Integration**: Sử dụng Expo Plugin system
 - ✅ **iOS Configuration**: Swift Package Manager thông qua plugin
@@ -378,7 +378,7 @@ npm run android      # Chạy trên Android
 
 **Đặc điểm:**
 - ✅ **Framework**: Pure React Native CLI
-- ✅ **TrackAsia SDK**: v2.0.2  
+- ✅ **TrackAsia SDK**: v2.0.3  
 - ✅ **React Native**: v0.79.3
 - ✅ **Package Manager**: Yarn v4 với node_modules
 - ✅ **iOS Setup**: Manual Podfile configuration
@@ -413,7 +413,7 @@ yarn android         # Chạy trên Android
 
 **Đặc điểm:**
 - ✅ **Architecture**: Expo với shared workspace
-- ✅ **TrackAsia SDK**: v2.0.2
+- ✅ **TrackAsia SDK**: v2.0.3
 - ✅ **React Native**: v0.76.9, Expo SDK ~52.0.39
 - ✅ **Navigation**: React Navigation với nested screens
 - ✅ **Workspace**: Monorepo setup với shared code
